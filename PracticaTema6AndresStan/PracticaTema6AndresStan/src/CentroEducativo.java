@@ -2,19 +2,14 @@ import java.util.ArrayList;
 
 public class CentroEducativo {
 
-    private ArrayList<Trabajador> lista;
+    private final ArrayList<Trabajador> lista;
 
-    public CentroEducativo() {
-        lista = new ArrayList<>();
-    }
 
     public CentroEducativo(ArrayList<Trabajador> lista) {
         this.lista = lista;
     }
 
-    public void añadirTrabajador(Trabajador t) {
-        lista.add(t);
-    }
+
 
     public void mostarTrabajadores() {
 
