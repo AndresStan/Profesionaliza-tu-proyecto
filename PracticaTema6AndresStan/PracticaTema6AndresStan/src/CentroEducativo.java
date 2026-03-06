@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class CentroEducativo {
 
-    private ArrayList<Trabajador> lista;
+    private final ArrayList<Trabajador> lista;
 
     public CentroEducativo() {
         lista = new ArrayList<>();
