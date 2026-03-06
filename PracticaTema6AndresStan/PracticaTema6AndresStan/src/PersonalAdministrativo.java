@@ -2,8 +2,8 @@ import java.time.LocalDate;
 
 public class PersonalAdministrativo extends Trabajador{
 
-    private String departamento;
-    private int nivel;
+    private final String departamento;
+    private final int nivel;
 
     public PersonalAdministrativo(String nombre, String apellidos, String dni, LocalDate fechaIncorporacion, double salarioBase, String departamento, int nivel) {
         super(nombre, apellidos, dni, fechaIncorporacion, salarioBase);
@@ -13,7 +13,7 @@ public class PersonalAdministrativo extends Trabajador{
 
     @Override
     public double calcularSalario() {
-        int multiplicador = 0;
+        int multiplicador;
 
         if (nivel < 0){
             System.out.println("Error, nivel incorrecto");
