@@ -2,8 +2,8 @@ import java.time.LocalDate;
 
 public class Profesor extends  Trabajador{
 
-    private String especialidad;
-    private int horasLectivasSemanales;
+    private final String especialidad;
+    private final int horasLectivasSemanales;
 
     public Profesor(String nombre, String apellidos, String dni, LocalDate fechaIncorporacion, double salarioBase, String especialidad, int horasLectivasSemanales) {
         super(nombre, apellidos, dni, fechaIncorporacion, salarioBase);
